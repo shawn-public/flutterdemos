@@ -76,3 +76,23 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - image/optimus_prime.jpg
+    - image/a-g-tiger-unsplash.jpg
+    - image/bas-van-brandwijk-crocodile-unsplash.jpg
+    - image/chris-charles-hummingbird-unsplash.jpg
+    - image/david-clode-rhinos-unsplash.jpg
+    - image/francesco-de-tommaso-lion-unsplash.jpg
+    - image/jack-seeds-u4-pheasant-unsplash.jpg
+    - image/jairo-alzate-iguana-unsplash.jpg
+    - image/jay-ruzesky-penguin-unsplash.jpg
+    - image/jessica-weiller-bear-unsplash.jpg
+    - image/kris-mikael-krister-turtle-unsplash.jpg
+    - image/ray-hennessy-heron-unsplash.jpg
+    - image/ray-rui-buffalo-unsplash.jpg
+    - image/saad-chaudhry-reindeer-unsplash.jpg
+    - image/sarah-olive-horse-unsplash.jpg
+    - image/sebastian-pena-lambarri-whaleshark-unsplash.jpg
+    - image/stan-yu-panda-unsplash.jpg
+    - image/stefan-steinbauer-hippo-unsplash.jpg
+    - image/trevor-mckinnon-leopard-unsplash.jpg
+    - image/wolfgang-hasselmann-dromedary-unsplash.jpg
+    - image/wolfgang-hasselmann-elephant-unsplash.jpg
