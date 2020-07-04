@@ -137,7 +137,7 @@ class ListViewDetailPage extends StatelessWidget {
                       .listViewImages[_listViewItemData.image.assetName
                           .replaceRange(0, 6, '')]
                       .description,
-                  style: TextStyle(fontSize: 16),
+                  style: TextStyle(height: 1.5,fontSize: 16),
                 ),
               )
             ],
@@ -157,17 +157,52 @@ class BottomNavigationPage extends StatefulWidget {
 
 ///
 class BottomNavigationPageState extends State<BottomNavigationPage> {
+  ///
+  int _currentIndex = 0;
+
+  ///
+  void _onBottomItemTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
+
+  ///
+  static const List<Widget> _widgetOptions = <Widget>[
+    Text(
+      'Put Contents "FOR YOU" Here.',
+    ),
+    Text(
+      'Put Contents "FAVORITES" Here.',
+    ),
+    Text(
+      'Put Contents "SETTINGS" Here.',
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
+    ///
     return Scaffold(
       appBar: FlutterFrameworkAppBar('BOTTOM NAVIGATION'),
       drawer: FlutterFrameworkDrawer(),
       body: Center(
         child: Padding(
           padding: EdgeInsets.all(16.0),
-          child: Text(
-              'This app is made for practicing features of flutter framework.'),
+          child: _widgetOptions.elementAt(_currentIndex),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.perm_identity), title: Text('FOR YOU')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite_border), title: Text('FAVORITES')),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.settings), title: Text('SETTINGS')),
+        ],
+        currentIndex: _currentIndex,
+        onTap: _onBottomItemTapped,
       ),
     );
   }
